@@ -1,10 +1,5 @@
 pipeline {
-  agent {
-    docker {
-      image 'raychee/python3-teradata'
-    }
-    
-  }
+  agent any
   stages {
     stage('HelloWorld') {
       steps {
